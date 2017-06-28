@@ -1,0 +1,49 @@
+<swiper indicator-dots="true" autoplay="true" circular="true">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item.pic_url}}" data-index="{{item.id}}" bindtap="goDetail" class="slide-image" style="width:100%;height:150px;" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="bac">
+  <view class="lineOne">
+    <image class="diamond" src="../../images/diamond.png"></image>
+    <view class="rqtj">人气推荐</view>
+  </view>
+  <view class="jx">明星商品为您精选</view>
+  <view style="margin-left:30rpx;">
+    <view class="jxList" data-id="1" bindtap="list">
+      <image class="tjPic" src="../../images/1.png"></image>
+      <view>使用说明</view>
+    </view>
+    <view class="jxList" data-id="2" bindtap="list">
+      <image class="tjPic" src="../../images/2.png"></image>
+      <view>病症分析</view>
+    </view>
+    <view class="jxList" bindtap="agent">
+      <image class="tjPic" src="../../images/3.png"></image>
+      <view>刷圈素材</view>
+    </view>
+    <view class="jxList" data-id="3" bindtap="list">
+      <image class="tjPic" src="../../images/4.png"></image>
+      <view>品牌咨询</view>
+    </view>
+    <view class="jxList" data-id="4" bindtap="list">
+      <image class="tjPic" src="../../images/6.png"></image>
+      <view>团队合作</view>
+    </view>
+    <view class="jxList" data-id="5" bindtap="list">
+      <image class="tjPic" src="../../images/5.png"></image>
+      <view>培训资料</view>
+    </view>
+  </view>
+</view>
+<view class="bac">
+  <view class="weui-panel__bd" bindtap="pDeatil">
+    <view class="weui-media-box weui-media-box_text">
+      <view class="weui-media-box__title weui-media-box__title_in-text">{{detail.title}}</view>
+      <view class="weui-media-box__desc">{{detail.descript}}</view>
+      <view class="price">￥{{detail.price}}</view>
+    </view>
+  </view>
+</view>

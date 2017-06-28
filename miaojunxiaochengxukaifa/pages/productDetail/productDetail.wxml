@@ -1,0 +1,34 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class="bac">
+  <swiper indicator-dots="true" autoplay="true" circular="true" style="height:700rpx;">
+    <block wx:for="{{list.pic_list}}">
+      <swiper-item>
+        <image src="{{list.https}}{{item}}" bindtap="goDetail" class="slide-image" style="width:100%;height:700rpx;" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="title">{{list.title}}</view>
+  <view class="desc">{{list.descript}}</view>
+  <view class="price">￥{{list.price}}</view>
+</view>
+<view class="bac">
+  <view class="tab">
+    <view bindtap="tab" data-id="1" class="tab_left {{tab==1?'tab_act':''}}">细节描述</view>
+    <view bindtap="tab" data-id="2" class="tab_middle {{tab==2?'tab_act':''}}">产品用途</view>
+    <view bindtap="tab" data-id="3" class="tab_right {{tab==3?'tab_act':''}}">品牌介绍</view>
+  </view>
+  <view wx:if="{{tab==1||tab==3}}">
+    <template wx:if="{{tab==1}}" is="wxParse" data="{{wxParseData:detail_des.nodes}}" />
+    <template wx:if="{{tab==3}}" is="wxParse" data="{{wxParseData:product_des.nodes}}" />
+  </view>
+  <view wx:if="{{tab==2}}" style="{{tab==2?'background: #f4f4f4':''}}">
+    <view wx:for="{{tabList}}" class="weui-panel weui-panel_access" data-id="{{item.id}}" bindtap="goList">
+      <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_text">
+          <view class="weui-media-box__title weui-media-box__title_in-text">{{item.tname}}</view>
+          <view class="weui-media-box__desc">{{item.descript}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

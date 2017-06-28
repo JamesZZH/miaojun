@@ -1,0 +1,14 @@
+/* pages/productDetail/productListDetail.wxss */
+
+.title {
+  text-align: center;
+  line-height: 160rpx;
+  font-weight: bolder;
+}
+
+.descript {
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  text-align: center;
+  color: #999;
+}

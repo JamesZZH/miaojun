@@ -1,0 +1,17 @@
+@import 'style/weui.wxss';
+@import "./wxParse/wxParse.wxss";
+page {
+  background: #f4f4f4;
+}
+
+.bac {
+  background: #fff;
+}
+
+.dis {
+  display: none !important;
+}
+
+.m-t-30 {
+  margin-top: 30rpx;
+}

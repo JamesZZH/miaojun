@@ -1,0 +1,5 @@
+<!--pages/agent/imagesList.wxml-->
+<view style="margin-left:20rpx;">
+  <image class="pic" wx:for="{{list}}" bindtap="pic" data-pic="{{item.https}}{{item.url}}" src="{{item.https}}{{item.thumb_url}}"></image>
+</view>
+

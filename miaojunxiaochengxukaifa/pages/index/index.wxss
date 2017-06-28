@@ -1,0 +1,47 @@
+.lineOne {
+  width: 500rpx;
+  display: inline-block;
+}
+
+.diamond {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+}
+
+.rqtj {
+  margin-left: 15rpx;
+  display: inline-block;
+  font-size: 28rpx;
+}
+
+.jx {
+  width: 230rpx;
+  line-height: 80rpx;
+  text-align: right;
+  font-size: 28rpx;
+  display: inline-block;
+  color: #333;
+  margin-right: 20rpx;
+}
+
+.tjPic {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.jxList {
+  text-align: center;
+  display: inline-block;
+  width: 230rpx;
+  font-size: 28rpx;
+  /*margin: 0 20rpx;*/
+}
+
+.price{
+  color: #d81e06;
+}
+
+.scroll-view_H{
+  white-space:nowrap;
+}

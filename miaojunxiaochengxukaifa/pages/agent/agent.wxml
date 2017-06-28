@@ -1,0 +1,20 @@
+<image class="key" src="../../images/key.png"></image>
+<view class="vip">VIP素材库</view>
+<view class="phone {{dis?'dis':''}}">拨打
+  <view class="phoneNum">xxxxxxxx</view>
+  立即成为会员
+</view>
+<form bindsubmit="formSubmit">
+  <view class="weui-cells weui-cells_after-title {{dis?'dis':''}}" style="margin: 50rpx 0;">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">会员码</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" name="code" placeholder="请输入会员码" />
+      </view>
+    </view>
+  </view>
+  <button formType="submit" type="primary" style="width: 700rpx;margin-bottom:30rpx;{{dis?'margin-top:60rpx;':''}}">立即查看</button>
+  <button bindtap="fankui" style="width: 700rpx;">查看反馈案例</button>
+</form>

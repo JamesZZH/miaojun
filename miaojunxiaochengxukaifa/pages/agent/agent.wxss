@@ -1,0 +1,28 @@
+/* pages/agent/agent.wxss */
+
+.key {
+  margin-top: 200rpx;
+  width: 240rpx;
+  height: 256rpx;
+  margin-left: 255rpx;
+}
+
+.vip {
+  width: 750rpx;
+  text-align: center;
+}
+
+.phone {
+  font-size: 26rpx;
+  display: inline-block;
+  width: 750rpx;
+  text-align: center;
+  color: #777;
+}
+
+.phoneNum {
+  font-size: 26rpx;
+  display: inline-block;
+  text-align: center;
+  color: #1a93df;
+}

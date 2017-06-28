@@ -1,0 +1,53 @@
+/* pages/productDetail/productDetail.wxss */
+
+.title {
+  margin-top: 20rpx;
+  width: 750rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.desc {
+  font-size: 26rpx;
+  width: 750rpx;
+  text-align: center;
+  color: #777;
+}
+
+.price {
+  width: 750rpx;
+  text-align: center;
+  color: #d81e06;
+}
+
+.tab {
+  margin-top: 30rpx;
+  color: #9a9a9a;
+}
+
+.tab_left {
+  line-height: 80rpx;
+  display: inline-block;
+  width: 249rpx;
+  text-align: center;
+  border-right: 1rpx solid #ccc;
+}
+
+.tab_middle {
+  line-height: 80rpx;
+  display: inline-block;
+  width: 249rpx;
+  text-align: center;
+  border-right: 1rpx solid #ccc;
+}
+
+.tab_right {
+  line-height: 80rpx;
+  display: inline-block;
+  width: 249rpx;
+  text-align: center;
+}
+
+.tab_act{
+  color: black;
+}
